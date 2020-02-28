@@ -1,0 +1,21 @@
+.tags {
+  font-size: 0;
+
+  &__link {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    border: 1px solid #E9E9E9;
+    border-radius: 3px;
+    color: #858585;
+    font-size: 13px;
+    text-decoration: none;
+    transition: border .3s, color .3s;
+
+    &:hover {
+      border: 1px solid $color-primary;
+      color: $color-primary;
+    }
+  }
+}

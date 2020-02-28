@@ -1,0 +1,28 @@
+.breadcrumbs {
+  margin: 30px 0 35px;
+  font-size: 16px;
+
+  @include respond(mobile-wide) {
+    font-size: 14px;
+  }
+
+  &__item {
+    display: inline-block;
+    color: #000;
+    transition: color .3s;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &_active, &_active:hover {
+      color: #ccc;
+    }
+  }
+
+  &__divider {
+    display: inline-block;
+    margin: 0 5px;
+    color: #ccc;
+  }
+}

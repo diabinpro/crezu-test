@@ -1,0 +1,42 @@
+.pagination {
+  text-align: center;
+
+  &__list {
+    list-style-type: none;
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 30px;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    @include respond(mobile-wide) {
+      margin-bottom: 10px;
+    }
+
+    &_active {
+      border: 1px solid transparent;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    border: 1px solid #EDEDED;
+    color: $color-primary;
+    text-decoration: none;
+    line-height: inherit;
+    transition: border .3s;
+
+    &:hover {
+      border: 1px solid $color-primary;
+    }
+  }
+}

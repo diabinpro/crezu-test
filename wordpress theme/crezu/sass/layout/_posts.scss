@@ -1,0 +1,37 @@
+.posts {
+  .card {
+    margin-bottom: 50px;
+
+    @include respond(mobile-wide) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &_index .card {
+    &:first-child {
+      @media only screen and (min-width: 992px) {
+        grid-column: 1/3;
+        margin-bottom: 38px;
+
+        .card {
+          &__caption {
+            padding: 30px 34px 40px;
+            background-color: #FAFAFA;
+          }
+
+          &__title {
+            font-size: 24px;
+          }
+
+          &__image {
+            height: 314px;
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+    margin-top: 24px;
+  }
+}

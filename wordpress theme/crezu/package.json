@@ -1,0 +1,24 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass -w style.scss style.css",
+    "start": "npm run watch:sass",
+    "build:css": "node-sass style.scss style.css | postcss --no-map -u autoprefixer -u cssnano -o style.min.css style.css"
+  },
+  "author": "Daniil Diabin <diabinpro@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "concurrently": "^5.1.0",
+    "cssnano": "^4.1.10",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0"
+  },
+  "browserslist": [
+    "last 10 versions"
+  ],
+  "dependencies": {}
+}

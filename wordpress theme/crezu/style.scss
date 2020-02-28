@@ -1,0 +1,70 @@
+/*
+Theme Name: crezu
+Author: Daniil Diabin
+Description: Crezu Test Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: crezu
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Crezu is based on Underscores https://underscores.me/, (C) 2012-2019 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Abstracts
+	## Variables
+	## Mixins
+# Base
+	## Base
+	## Typography
+	## Grid
+	## Utilities
+# Layout
+	## Header
+	## Posts
+	## Post
+	## Sidebar
+	## Footer
+# Components
+	## Buttons
+	## Featured
+	## Breadcrumbs
+	## Card
+	## Pagination
+	## Icons
+	## Tags
+--------------------------------------------------------------*/
+
+@import "sass/normalize";
+
+@import "sass/abstracts/variables";
+@import "sass/abstracts/mixins";
+
+@import "sass/base/base";
+@import "sass/base/typography";
+@import "sass/base/grid";
+@import "sass/base/utilites";
+
+@import "sass/layout/header";
+@import "sass/layout/posts";
+@import "sass/layout/post";
+@import "sass/layout/sidebar";
+@import "sass/layout/footer";
+
+@import "sass/components/buttons";
+@import "sass/components/featured";
+@import "sass/components/breadcrumbs";
+@import "sass/components/card";
+@import "sass/components/pagination";
+@import "sass/components/icons";
+@import "sass/components/tags";

@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  [class^="grid"] {
+    display: grid;
+    grid-column-gap: 40px;
+  }
+}
+
+.grid {
+  &_posts {
+    grid-template-columns: 1fr 1fr;
+
+    @include respond(mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &_sidebar {
+    grid-template-columns: 1fr 340px;
+
+    @include respond(tab-land) {
+      grid-template-columns: 2fr 1fr;
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

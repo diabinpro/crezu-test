@@ -1,0 +1,45 @@
+.featured {
+  background-color: #FFE91E;
+
+  &__wrapper {
+    @include align-center;
+    justify-content: center;
+    height: 140px;
+
+    @include respond(mobile-wide) {
+      height: 180px;
+      flex-direction: column;
+    }
+
+    @include respond(mobile) {
+      height: 200px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 26px;
+
+    @include respond(tab-port) {
+      font-size: 24px;
+    }
+
+    @include respond(mobile-wide) {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    @include respond(mobile) {
+      font-size: 18px;
+    }
+  }
+
+  .btn {
+    margin-left: 54px;
+
+    @include respond(mobile-wide) {
+      margin-left: 0;
+    }
+  }
+}

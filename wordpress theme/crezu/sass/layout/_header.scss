@@ -1,0 +1,49 @@
+.header {
+    border-bottom: 2px solid #FFCE00;
+
+    &__wrapper {
+        @include align-center;
+        justify-content: space-between;
+        height: 100px;
+
+        @include respond(mobile-wide) {
+            justify-content: center;
+            height: 80px;
+        }
+    }
+
+    &__side {
+        @include align-center;
+
+        @include respond(mobile-wide) {
+            display: none;
+        }
+    }
+
+    &-menu {
+        &__list {
+            list-style-type: none;
+        }
+
+        &__item {
+            display: inline-block;
+            margin-right: 37px;
+        }
+
+        &__item_active &__link,
+        &__item:hover &__link {
+            color: $color-primary;
+        }
+
+        &__link {
+            color: #010101;
+            font-size: 15px;
+            text-decoration: none;
+            transition: color .3s;
+        }
+    }
+
+    .btn {
+        margin-left: 2px;
+    }
+}

@@ -1,0 +1,81 @@
+.footer {
+    padding: 35px 0 50px;
+    background: #F9F9F9;
+
+    &-menu {
+        &__list {
+            list-style-type: none;
+            font-size: 0;
+        }
+
+        &__item {
+            display: inline-block;
+
+            &:not(:last-child) {
+                margin-right: 33px;
+            }
+
+            @include respond(mobile) {
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        &__link {
+            color: #000;
+            font-size: 13px;
+
+            @include respond(mobile) {
+                font-size: 11px;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &_bottom {
+            @include respond(mobile-wide) {
+                margin-bottom: 16px;
+                font-size: 11px;
+            }
+        }
+
+        &_bottom &__link {
+            color: $color-primary;
+            text-decoration: none;
+        }
+    }
+
+    &__text {
+        margin: 24px 0 21px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 13px;
+        line-height: 1.7;
+
+        @include respond(mobile-wide) {
+            font-size: 11px;
+        }
+    }
+
+    &__bottom {
+        @include align-center;
+        justify-content: space-between;
+
+        @include respond(mobile-wide) {
+            flex-direction: column;
+        }
+    }
+
+    &__copyright {
+        color: #959595;
+        font-size: 13px;
+
+        @include respond(mobile-wide) {
+            font-size: 11px;
+        }
+    }
+}
